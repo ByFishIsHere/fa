@@ -14,7 +14,7 @@ bot.on('message', function (message)    {
     }
     if (message.content === '!space')    {
         message.delete()
-        message.channel.send('``` ```')
+        message.channel.send('========================================================')
     }
 });
 bot.on('guildMemberAdd', member => {
