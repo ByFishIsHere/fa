@@ -19,6 +19,5 @@ bot.on('message', function (message)    {
 bot.on('guildMemberAdd', member => {
     var role = member.guild.roles.find('name', 'R0 - En Attente');
     member.addRole(role)
-}
 })
 bot.login(token);
