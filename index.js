@@ -16,6 +16,10 @@ bot.on('message', function (message)    {
         message.delete()
         message.channel.send('========================================================')
     }
+    if (message.content === '!diet')    {
+        message.delete()
+        message.channel.send(':tumbler_glass: **Tiens voilà un bon jus de pamplemousse** :tumbler_glass: ')
+    }
 });
 bot.on('guildMemberAdd', member => {
     var role = member.guild.roles.find('name', 'R0 - En Attente');
