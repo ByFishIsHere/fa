@@ -15,15 +15,18 @@ bot.on('message', function (message)    {
         message.delete()
         message.channel.send('**Et deux jus de pomme qui piquent !**')
     }
-    if (message.content === '!space')    {
-        message.delete()
-        message.channel.send('========================================================')
-    }
     if (message.content === '!diet')    {
         message.delete()
         message.channel.send(':tumbler_glass: **Tiens voilà un bon jus de pamplemousse** :tumbler_glass: ')
     }
+    if (message.content === '!space')    {
+        message.delete()
+        message.channel.send('========================================================')
+    }
 });
+bot.on('presenceUpdate', member  => {
+    member.status(dnd)
+})
 bot.on('guildMemberAdd', member => {
     var role = member.guild.roles.find('name', 'R0 - En Attente');
     member.addRole(role)
