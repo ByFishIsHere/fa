@@ -24,9 +24,6 @@ bot.on('message', function (message)    {
         message.channel.send('========================================================')
     }
 });
-bot.on('presenceUpdate', member  => {
-    member.status(dnd)
-})
 bot.on('guildMemberAdd', member => {
     var role = member.guild.roles.find('name', 'R0 - En Attente');
     member.addRole(role)
