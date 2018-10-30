@@ -21,7 +21,7 @@ bot.on('message', function (message)    {
     }
     if (message.content === '!danse')    {
         message.delete()
-        message.channel.send('**Yeyy** https://media.giphy.com/media/r5gGUeFq0fDVe/giphy.gif')
+        message.channel.send('**:dancers: Yeyy :dancers:** https://media.giphy.com/media/r5gGUeFq0fDVe/giphy.gif')
     }
     if (message.content === '!space')    {
         message.delete()
