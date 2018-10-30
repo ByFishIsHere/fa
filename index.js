@@ -19,6 +19,10 @@ bot.on('message', function (message)    {
         message.delete()
         message.channel.send(':tumbler_glass: **Tiens voilà un bon jus de pamplemousse** :tumbler_glass: ')
     }
+    if (message.content === '!danse')    {
+        message.delete()
+        message.channel.send('**Yeyy** https://media.giphy.com/media/r5gGUeFq0fDVe/giphy.gif')
+    }
     if (message.content === '!space')    {
         message.delete()
         message.channel.send('========================================================')
